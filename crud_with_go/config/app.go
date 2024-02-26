@@ -15,7 +15,7 @@ var (
 func Connect() {
 	// d, err := gorm.Open("mysql", "akhil:Axlesharma@12@/simplerest?charset=utf8&parseTime=True&loc=Local")
 
-	dsn := "root:root@tcp(localhost:8889)/showcase_db?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "dbeaver:dbeaver@tcp(localhost:3306)/showcase_db?charset=utf8mb4&parseTime=True&loc=Local"
 	d, err := gorm.Open(mysql.Open(dsn), &gorm.Config{
 		NamingStrategy: schema.NamingStrategy{
 			SingularTable: true,
